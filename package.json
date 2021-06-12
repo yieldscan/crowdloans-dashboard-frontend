@@ -1,15 +1,29 @@
 {
-  "name": "crowdloans-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.2.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+	"name": "crowdloans-frontend",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"git:commit": "git cz"
+	},
+	"dependencies": {
+		"@sentry/browser": "^6.6.0",
+		"@sentry/node": "^6.6.0",
+		"@sentry/webpack-plugin": "^1.15.1",
+		"@zeit/next-source-maps": "0.0.4-canary.1",
+		"next": "10.2.3",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"sass": "^1.34.1"
+	},
+	"devDependencies": {
+		"@tailwindcss/jit": "^0.1.18",
+		"autoprefixer": "^10.2.6",
+		"git-cz": "^4.7.6",
+		"postcss": "^8.3.2",
+		"postcss-preset-env": "^6.7.0",
+		"tailwindcss": "^2.1.4"
+	}
 }
