@@ -12,7 +12,7 @@ const OverviewComponent = dynamic(
 );
 
 const Payment = () => (
-	<Page title="Overview" layoutProvider={withDashboardLayout}>
+	<Page title="Crowdloans" layoutProvider={withDashboardLayout}>
 		{() => <OverviewComponent />}
 	</Page>
 );
