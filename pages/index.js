@@ -1,20 +1,20 @@
 import dynamic from "next/dynamic";
-import withBaseLayout from "@components/common/layouts/base";
+import withDashboardLayout from "@components/common/layouts/dashboard";
 
 const Page = dynamic(
 	() => import("@components/common/page").then((mod) => mod.default),
 	{ ssr: false }
 );
 
-const HomeComponent = dynamic(
-	() => import("@components/home").then((mod) => mod.default),
+const OverviewComponent = dynamic(
+	() => import("@components/overview").then((mod) => mod.default),
 	{ ssr: false }
 );
 
-const HomePage = () => (
-	<Page title="Home" layoutProvider={withBaseLayout}>
-		{() => <HomeComponent />}
+const Payment = () => (
+	<Page title="Overview" layoutProvider={withDashboardLayout}>
+		{() => <OverviewComponent />}
 	</Page>
 );
 
-export default HomePage;
+export default Payment;
