@@ -10,7 +10,7 @@ export default function NotFound() {
 					Either the internet has broken or we couldn't find the file that you
 					were looking for.
 				</p>
-				<Link href="/">
+				<Link href="/overview">
 					<a className="rounded-full bg-teal-500 text-white px-10 py-2 mt-8 shadow-teal self-start">
 						Take me back
 					</a>
