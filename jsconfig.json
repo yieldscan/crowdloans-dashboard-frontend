@@ -4,8 +4,8 @@
 		"paths": {
 			"@lib/*": ["lib/*"],
 			"@layouts/*": ["layouts/*"],
-			"@components/*": ["components/*"]
-		}
+			"@components/*": ["components/*"],
+		},
 	},
 	"exclude": ["node_modules", "out", ".next"]
 }
