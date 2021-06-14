@@ -7,40 +7,41 @@ const {
 } = require("tailwindcss/defaultTheme");
 
 module.exports = {
+	purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
 			colors: {
 				teal: {
 					...colors.teal,
-					"300": "#45E2E2",
-					"500": "#2BCACA",
-					"700": "#20B1B1",
+					300: "#45E2E2",
+					500: "#2BCACA",
+					700: "#20B1B1",
 				},
 				pink: {
 					...colors.pink,
-					"300": "#FF9DC0",
-					"500": "#FF7CAB",
-					"700": "#EF6093",
+					300: "#FF9DC0",
+					500: "#FF7CAB",
+					700: "#EF6093",
 				},
 				orange: {
 					...colors.orange,
-					"500": "#F5B100",
+					500: "#F5B100",
 				},
 				bgGray: {
-					"100": "#F1F8FF",
-					"200": "#E2ECF9",
-					"300": "#D1DDEA",
-					"400": "#C7D3E0",
-					"500": "#BEC7D2",
-					"900": "#B3BECC",
+					100: "#F1F8FF",
+					200: "#E2ECF9",
+					300: "#D1DDEA",
+					400: "#C7D3E0",
+					500: "#BEC7D2",
+					900: "#B3BECC",
 				},
 				textGray: {
-					"100": "#94A4B7",
-					"200": "#798594",
-					"300": "#626D7B",
-					"400": "#48607C",
-					"500": "#35475C",
-					"700": "#212D3B",
+					100: "#94A4B7",
+					200: "#798594",
+					300: "#626D7B",
+					400: "#48607C",
+					500: "#35475C",
+					700: "#212D3B",
 				},
 			},
 			borderRadius: {
@@ -56,12 +57,12 @@ module.exports = {
 				help: "help",
 			},
 			opacity: {
-				"10": "0.1",
-				"22": "0.22",
+				10: "0.1",
+				22: "0.22",
 			},
 			scale: {
 				...scale,
-				"102": "1.02",
+				102: "1.02",
 			},
 		},
 	},

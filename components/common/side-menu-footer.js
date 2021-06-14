@@ -1,5 +1,6 @@
 import { FaDiscord, FaTelegram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { Settings } from "react-feather";
 import { MenuOption } from "@components/common/sidemenu";
 import { useRouter } from "next/router";
 import Routes from "@lib/routes";
@@ -16,6 +17,7 @@ const SideMenuFooter = () => {
 			/> */}
 			<MenuOption
 				label="Settings"
+				Icon={Settings}
 				selected={router.pathname === Routes.SETTINGS}
 				href={Routes.SETTINGS}
 			/>
