@@ -61,10 +61,21 @@ const Overview = () => {
 					No account {isNil(accounts) ? "connected" : "selected"}!
 				</span>
 				<button
-					className="border border-black text-black px-3 py-2 rounded-full"
+					className="flex item-center rounded-lg border border-gray-300 p-2 px-4 font-medium text-white bg-black mr-4"
 					onClick={toggle}
 				>
-					{isNil(accounts) ? "Connect Wallet" : "Select Account"}
+					{isNil(accounts) ? (
+						<>
+							<span> Connect Wallet</span>
+							<img
+								className="ml-4 inline"
+								src="/images/celo-wallet.svg"
+								alt=""
+							/>
+						</>
+					) : (
+						"Select Account"
+					)}
 				</button>
 			</div>
 		</div>
