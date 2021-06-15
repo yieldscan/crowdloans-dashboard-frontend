@@ -52,7 +52,7 @@ const EditControllerModal = ({
 										className={`
 								flex items-center rounded-lg border-1 border-gray-200 ${
 									selectedController === account
-										? "border-teal-500 border-2"
+										? "border-black border-2"
 										: "border-2 transform hover:scale-105"
 								} cursor-pointer px-3 py-3 mb-2 text-gray-600
 								transition-all duration-300 ease-in-out
@@ -81,7 +81,7 @@ const EditControllerModal = ({
 						<button
 							className={`
 						flex items-center px-12 py-3 text-white rounded-lg
-						${false ? "bg-teal-500" : "bg-gray-400 cursor-not-allowed"}
+						${false ? "bg-black" : "bg-gray-400 cursor-not-allowed"}
 					`}
 					// onClick={}
 						>

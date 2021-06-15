@@ -31,7 +31,7 @@ const ConfirmSelection = ({
 				</span>
 				<div className="flex justify-between items-center rounded-full pl-4 border border-gray-200">
 					<span>Estimated Returns</span>
-					<div className="ml-2 px-3 py-2 bg-teal-500 text-white rounded-full">
+					<div className="ml-2 px-3 py-2 bg-black text-white rounded-full">
 						{formatCurrency.methods.formatAmount(
 							Math.trunc(
 								result.returns.currency * 10 ** networkInfo.decimalPlaces
@@ -50,7 +50,7 @@ const ConfirmSelection = ({
 					networkInfo={networkInfo}
 				/>
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={handleSelectionConfirmation}
 				>
 					Confirm and Stake

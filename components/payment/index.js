@@ -30,15 +30,13 @@ const Steps = ({ steps, currentStep }) => (
 						<div
 							className={`flex items-center justify-center
 								w-10 h-10 rounded-full text-white text-lg mr-4
-								${index > currentStep ? "bg-gray-500" : "bg-teal-500"}
+								${index > currentStep ? "bg-gray-500" : "bg-black"}
 							`}
 						>
 							<span>{index + 1}</span>
 						</div>
 						<div
-							className={
-								index > currentStep ? "text-gray-500" : "text-teal-500"
-							}
+							className={index > currentStep ? "text-gray-500" : "text-black"}
 						>
 							{step}
 						</div>
@@ -73,7 +71,7 @@ const SuccessfullyBonded = ({ transactionHash, onConfirm, networkInfo }) => {
 				Track this transaction on Subscan
 			</a>
 			<button
-				className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+				className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 				onClick={onConfirm}
 			>
 				Proceed
@@ -116,7 +114,7 @@ const ChainErrorPage = ({ onConfirm, back }) => {
 					py={6}
 					w="full"
 					variant="solid"
-					variantColor="teal"
+					variantColor="black"
 					fontWeight="normal"
 					rounded="lg"
 					onClick={onConfirm}
@@ -128,7 +126,7 @@ const ChainErrorPage = ({ onConfirm, back }) => {
 					py={6}
 					w="full"
 					variant="outline"
-					variantColor="teal"
+					variantColor="black"
 					fontWeight="normal"
 					rounded="lg"
 					// onClick={onConfirm}
@@ -386,7 +384,7 @@ const Payment = () => {
 		return (
 			<div className="flex-center w-full h-full">
 				<div className="flex-center flex-col">
-					<Spinner size="xl" color="teal.500" thickness="4px" />
+					<Spinner size="xl" color="black" thickness="4px" />
 					<span className="text-sm text-gray-600 mt-5">
 						Loading payment page...
 					</span>

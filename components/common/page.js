@@ -19,7 +19,7 @@ const Page = ({ title, children, layoutProvider }) => {
 					className="flex-center flex-col bg-gray-100"
 					style={{ width: "100vw", height: "100vh" }}
 				>
-					<span className="text-lg text-teal-500 font-bold text-4xl mb-10">
+					<span className="text-lg text-black font-bold text-4xl mb-10">
 						YieldScan
 					</span>
 					<h1 className="text-xl text-center text-gray-800 px-5">

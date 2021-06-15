@@ -231,8 +231,8 @@ const Confirmation = ({
 									<ListIcon
 										icon={Circle}
 										size="12px"
-										color="teal.500"
-										fill="teal.500"
+										color="black"
+										fill="black"
 									/>
 								</span>
 								<p>Capital risk of due to volatility of token price.</p>
@@ -244,8 +244,8 @@ const Confirmation = ({
 									<ListIcon
 										icon={Circle}
 										size="12px"
-										color="teal.500"
-										fill="teal.500"
+										color="black"
+										fill="black"
 									/>
 								</span>
 								<p>
@@ -279,8 +279,8 @@ const Confirmation = ({
 									<ListIcon
 										icon={Circle}
 										size="12px"
-										color="teal.500"
-										fill="teal.500"
+										color="black"
+										fill="black"
 									/>
 								</span>
 								<p>
@@ -470,7 +470,7 @@ const Confirmation = ({
 			</div> */}
 			<div className="mt-4 w-full text-center">
 				<button
-					className="rounded-full font-medium px-12 py-3 bg-teal-500 text-white"
+					className="rounded-full font-medium px-12 py-3 bg-black text-white"
 					onClick={() => onConfirm()}
 				>
 					Invest Now

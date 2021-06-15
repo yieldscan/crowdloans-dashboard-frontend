@@ -28,7 +28,7 @@ const ValidatorInfo = ({
 		<div
 			className={`
 			rounded-lg flex items-center px-4 py-2 mb-2 cursor-pointer transition duration-500 w-full overflow-x-hidden
-			${selected ? "border-2 border-teal-500" : "border border-gray-200"}
+			${selected ? "border-2 border-black" : "border border-gray-200"}
 		`}
 			onClick={toggleSelected}
 		>
@@ -36,7 +36,7 @@ const ValidatorInfo = ({
 				<div className="w-1/5">
 					<Check
 						size="1.75rem"
-						className="p-1 bg-teal-500 text-white rounded-full"
+						className="p-1 bg-black text-white rounded-full"
 						strokeWidth="4px"
 					/>
 				</div>
@@ -73,7 +73,7 @@ const ValidatorInfo = ({
 				</div>
 				{!editMode && (
 					<div className="flex flex-col ml-5">
-						<span className="text-teal-500 text-sm">Stake</span>
+						<span className="text-black text-sm">Stake</span>
 						<h5 className="text-gray-700 text-lg truncate">
 							{formatCurrency.methods.formatAmount(
 								Math.trunc(
@@ -215,7 +215,7 @@ const ValidatorsList = ({
 						<span>Advanced</span>
 					</button>
 					<button
-						className="p-2 px-4 text-sm flex-center rounded-full bg-teal-500 text-white font-semibold cursor-pointer"
+						className="p-2 px-4 text-sm flex-center rounded-full bg-black text-white font-semibold cursor-pointer"
 						onClick={onConfirm}
 					>
 						Confirm

@@ -162,7 +162,7 @@ const EditControllerModal = withSlideIn(({ styles, close, networkInfo }) => {
 										className={`
 											flex items-center rounded-lg border-1 border-gray-200 ${
 												selectedAccount === account.address
-													? "border-teal-500 border-2"
+													? "border-black border-2"
 													: "border-2 transform hover:scale-105"
 											} cursor-pointer px-3 py-3 mb-2 text-gray-600
 								transition-all duration-300 ease-in-out
@@ -185,7 +185,7 @@ const EditControllerModal = withSlideIn(({ styles, close, networkInfo }) => {
 									py="2"
 									mt="5"
 									rounded="0.5rem"
-									backgroundColor="teal.500"
+									backgroundColor="black"
 									color="white"
 									onClick={updateController}
 									isLoading={editLoading}

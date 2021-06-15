@@ -10,7 +10,7 @@ const RejectedPage = ({ handleRecoveryAuth }) => (
 			while maintaining complete control over your funds.
 		</span>
 		<a
-			className="mt-12 px-16 py-3 bg-teal-500 text-white rounded-full"
+			className="mt-12 px-16 py-3 bg-black text-white rounded-full"
 			href="https://github.com/polkadot-js/extension#installation"
 			target="_blank"
 		>
