@@ -16,8 +16,10 @@ const MenuOption = ({
 				target={isExternal ? "_blank" : "_self"}
 				className={`flex items-center ${
 					!selected && "hover:ml-2"
-				} rounded px-5 py-2 mb-2 transition-all duration-300 ease-in-out text-sm min-w-fit-content hover:bg-gray-400 hover:bg-opacity-22 ${
-					selected ? "text-black" : "text-gray-600"
+				} px-6 py-2 mb-2 transition-all duration-300 ease-in-out text-sm min-w-fit-content hover:bg-gray-400 hover:bg-opacity-90 ${
+					selected
+						? "bg-black text-white rounded-none hover:text-black"
+						: "text-gray-600 rounded"
 				}`}
 			>
 				{Icon && <Icon className="mr-2 mb-px inline" size="16px" />}
@@ -31,7 +33,7 @@ const SideMenu = () => {
 	const router = useRouter();
 
 	return (
-		<div className="px-4">
+		<div className="">
 			<MenuOption
 				label="Dashboard"
 				Icon={Home}

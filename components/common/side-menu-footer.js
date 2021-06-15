@@ -9,7 +9,7 @@ const SideMenuFooter = () => {
 	const router = useRouter();
 
 	return (
-		<div className="text-gray-600 px-4 w-full">
+		<div className="text-gray-600  w-full">
 			{/* <MenuOption
 				label="Request Features"
 				href="https://yieldscan.upvoty.com/b/yieldscan/"

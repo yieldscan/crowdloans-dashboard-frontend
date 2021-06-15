@@ -333,10 +333,15 @@ const Header = ({ isBase }) => {
 					<div className="flex">
 						{isNil(accounts) ? (
 							<button
-								className="rounded-full border border-gray-300 p-2 px-4 font-medium text-gray-800 mr-4"
+								className="flex item-center rounded-lg border border-gray-300 p-2 px-4 font-medium text-white bg-black mr-4"
 								onClick={toggle}
 							>
 								Connect Wallet
+								<img
+									className="ml-4 inline"
+									src="/images/celo-wallet.svg"
+									alt=""
+								/>
 							</button>
 						) : isNil(stashAccount) ? (
 							<Popover
@@ -428,7 +433,7 @@ const Header = ({ isBase }) => {
 								onOpen={() => setIsStashPopoverOpen(true)}
 							>
 								<PopoverTrigger>
-									<button className="flex items-center mr-8">
+									<button className="flex items-center mr-4">
 										<Identicon address={get(stashAccount, "address")} />
 										<div className="cursor-pointer ml-2 text-left">
 											<h3 className="flex items-center text-gray-700 font-medium -mb-1">
@@ -527,7 +532,7 @@ const Header = ({ isBase }) => {
 							</Popover>
 						)}
 
-						<div className="relative">
+						<div className="relative mr-8">
 							<Popover
 								isOpen={isNetworkOpen}
 								onClose={() => setIsNetworkOpen(false)}
@@ -535,7 +540,7 @@ const Header = ({ isBase }) => {
 							>
 								<PopoverTrigger>
 									<button
-										className="relative flex items-center rounded-full border border-gray-300 p-2 px-4 font-semibold text-gray-800 z-20"
+										className="relative flex items-center rounded-lg border-2 border-black p-2 font-semibold text-gray-800 z-20"
 										onClick={() => {
 											setIsNetworkOpen(!isNetworkOpen);
 										}}
@@ -543,9 +548,8 @@ const Header = ({ isBase }) => {
 										<img
 											src={`/images/${networkInfo.network}-logo.png`}
 											alt={`${networkInfo.network}-logo`}
-											className="mr-2 w-6 rounded-full"
+											className="w-6 rounded-full"
 										/>
-										<ChevronDown size="20px" />
 									</button>
 								</PopoverTrigger>
 								<PopoverContent

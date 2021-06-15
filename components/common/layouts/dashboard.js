@@ -201,24 +201,15 @@ const withDashboardLayout = (children) => {
 		<div>
 			<Header />
 			<div className="dashboard-content fixed flex relative w-full">
-				<div className="h-full hidden xl:block sidemenu-container xl:w-2/12 py-8 max-w-xs">
+				<div className="h-full relative hidden xl:block sidemenu-container xl:w-2/12 py-8 max-w-xs">
 					<SideMenu />
-					<div className="absolute bottom-0 pb-8">
+					<div className="absolute w-full bottom-0 pb-8">
 						<SideMenuFooter />
 					</div>
 				</div>
 
 				<div className="h-full px-8 overflow-y-scroll  mx-auto w-full">
-					<div
-						className={`mx-auto h-full ${
-							includes(
-								[Routes.OVERVIEW, Routes.CALCULATOR, Routes.SETTINGS],
-								get(router, "pathname")
-							)
-								? "max-w-screen-lg"
-								: "max-w-screen-xl"
-						}`}
-					>
+					<div className="mx-auto h-full max-w-screen-xl">
 						{showBetaMessage && (
 							<Alert
 								status="info"
