@@ -19,7 +19,7 @@ const SuccessfullyBonded = ({ transactionHash, onConfirm }) => {
 				Track this transaction on Subscan
 			</a>
 			<button
-				className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+				className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 				onClick={onConfirm}
 			>
 				Continue

@@ -256,7 +256,7 @@ const RewardCalculatorPage = () => {
 	return loading ? (
 		<div className="flex-center w-full h-full">
 			<div className="flex-center flex-col">
-				<Spinner size="xl" color="teal.500" thickness="4px" />
+				<Spinner size="xl" color="black" thickness="4px" />
 				<span className="text-sm text-gray-600 mt-5">
 					Instantiating API and fetching data...
 				</span>
@@ -479,7 +479,7 @@ const RewardCalculatorPage = () => {
 					<div className="w-full bg-white bottom-0 p-8 left-0 flex-center">
 						<button
 							className={`
-						rounded-full font-medium px-12 py-3 bg-teal-500 text-white
+						rounded-full font-medium px-12 py-3 bg-black text-white
 						${
 							(stashAccount &&
 								(get(freeAmount, "currency", 0) < networkInfo.minAmount
@@ -523,7 +523,7 @@ const RewardCalculatorPage = () => {
 				{/* <div className="fixed w-full bg-white bottom-0 p-10 left-0 flex-center">
 					<button
 						className={`
-						rounded-full font-semibold text-lg px-24 py-4 bg-teal-500 text-white
+						rounded-full font-semibold text-lg px-24 py-4 bg-black text-white
 						${
 							stashAccount && calculationDisabled
 								? "opacity-75 cursor-not-allowed"

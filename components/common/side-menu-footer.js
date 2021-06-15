@@ -25,21 +25,21 @@ const SideMenuFooter = () => {
 				<a
 					target="_blank"
 					href="https://discord.gg/5Dggqx8"
-					className="mr-8 hover:text-teal-500"
+					className="mr-8 hover:text-black"
 				>
 					<FaDiscord size="24px" className="mr-2" />
 				</a>
 				<a
 					target="_blank"
 					href="https://t.me/yieldscan"
-					className="mr-8 hover:text-teal-500"
+					className="mr-8 hover:text-black"
 				>
 					<FaTelegram size="24px" className="mr-2" />
 				</a>
 				<a
 					href="mailto:karan@buidllabs.io"
 					target="_blank"
-					className="hover:text-teal-500"
+					className="hover:text-black"
 				>
 					<IoIosMail size="24px" />
 				</a>

@@ -71,7 +71,7 @@ const ExpectedReturnsCard = ({
 
 	return (
 		<>
-			<div className="relative rounded-xl bg-teal-500 shadow-teal text-white p-8">
+			<div className="relative rounded-xl bg-black shadow-teal text-white p-8">
 				<h1 className="font-semibold text-xl">Expected Results</h1>
 				<div className="flex flex-col mt-2">
 					<div className="flex mt-2">
@@ -171,7 +171,7 @@ const ExpectedReturnsCard = ({
 				{/* <div className="flex mt-4">
 					<button
 						className={`
-						rounded-full font-semibold text-lg mt-5 px-8 py-3 bg-white text-teal-500
+						rounded-full font-semibold text-lg mt-5 px-8 py-3 bg-white text-black
 						${
 							stashAccount && calculationDisabled
 								? "opacity-75 cursor-not-allowed"

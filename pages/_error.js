@@ -22,13 +22,13 @@ const MyError = ({ statusCode, hasGetInitialPropsRun, err }) => {
 					Either the internet has broken or you found a bug.
 				</p>
 				<Link href="/overview">
-					<a className="rounded-full bg-teal-500 text-white px-10 py-2 mt-8 shadow-teal self-start">
+					<a className="rounded-full bg-black text-white px-10 py-2 mt-8 shadow-teal self-start">
 						Take me back
 					</a>
 				</Link>
 				{/* {!hasGetInitialPropsRun && err ? ( */}
 				<button
-					className="border border-teal-500 bg-white rounded-full px-10 py-2 mt-2 text-teal-500 self-start"
+					className="border border-black bg-white rounded-full px-10 py-2 mt-2 text-black self-start"
 					onClick={() =>
 						Sentry.showReportDialog({
 							eventId: Sentry.captureException(err),

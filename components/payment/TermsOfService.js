@@ -77,7 +77,7 @@ const TermsAndServicePopover = ({
 								<button
 									className={`
 						flex items-center px-12 py-3 text-white rounded-full
-						${!clickDisabled ? "bg-teal-500" : "bg-gray-400 cursor-default"}
+						${!clickDisabled ? "bg-black" : "bg-gray-400 cursor-default"}
 					`}
 									disabled={clickDisabled}
 									onClick={() => {

@@ -54,13 +54,13 @@ const ConfirmAmountChange = ({
 					on the calculator. Would you like to update the amount to match?
 				</span>
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={handlePopoverClose}
 				>
 					Back to Dashboard
 				</button>
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={onConfirm}
 				>
 					Confirm and Stake

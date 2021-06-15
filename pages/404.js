@@ -11,7 +11,7 @@ export default function NotFound() {
 					were looking for.
 				</p>
 				<Link href="/overview">
-					<a className="rounded-full bg-teal-500 text-white px-10 py-2 mt-8 shadow-teal self-start">
+					<a className="rounded-full bg-black text-white px-10 py-2 mt-8 shadow-teal self-start">
 						Take me back
 					</a>
 				</Link>

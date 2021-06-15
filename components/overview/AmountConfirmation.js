@@ -84,7 +84,7 @@ const AmountConfirmation = ({
 								networkInfo
 							)}
 						</h3>
-						<span className="text-sm font-medium text-teal-500">
+						<span className="text-sm font-medium text-black">
 							${bondedAmount.subCurrency.toFixed(2)}
 						</span>
 					</div>
@@ -103,14 +103,14 @@ const AmountConfirmation = ({
 								networkInfo
 							)}
 						</h3>
-						<span className="text-sm font-medium text-teal-500">
+						<span className="text-sm font-medium text-black">
 							${totalAmountFiat.toFixed(2)}
 						</span>
 					</div>
 				</div>
 			</div>
 			{/* <button
-				className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+				className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 				onClick={handlePopoverClose}
 			>
 				Back to Dashboard
@@ -186,7 +186,7 @@ const AmountConfirmation = ({
 			</div>
 			<div className="w-full flex-center">
 				<button
-					className="rounded-full font-medium px-12 py-3 bg-teal-500 mt-40 mb-40 text-white"
+					className="rounded-full font-medium px-12 py-3 bg-black mt-40 mb-40 text-white"
 					onClick={onConfirm}
 				>
 					Confirm

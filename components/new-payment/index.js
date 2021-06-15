@@ -70,7 +70,7 @@ const PaymentPopover = ({
 					Track this transaction on Subscan
 				</a>
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={onConfirm}
 				>
 					Proceed
@@ -99,13 +99,13 @@ const PaymentPopover = ({
 					Track this transaction on PolkaScan
 				</a> */}
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={onConfirm}
 				>
 					Retry
 				</button>
 				<button
-					className="mt-8 px-24 py-4 bg-teal-500 text-white rounded-lg"
+					className="mt-8 px-24 py-4 bg-black text-white rounded-lg"
 					onClick={() =>
 						Sentry.showReportDialog({
 							eventId: Sentry.captureException(errMessage),

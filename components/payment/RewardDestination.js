@@ -66,17 +66,19 @@ const RewardDestination = ({
 									? "opacity-25 cursor-not-allowed"
 									: "opacity-100 cursor-pointer"
 							}  px-6 py-6 mb-2
-							${accountType === destination && "border-teal-500"}
+							${accountType === destination && "border-black"}
 						`}
 						onClick={() => {
 							if (!compounding) {
 								setDestination(accountType);
-								trackEvent(Events.ADV_PREFS_EDIT, { rewardDestination: accountType });
+								trackEvent(Events.ADV_PREFS_EDIT, {
+									rewardDestination: accountType,
+								});
 							}
 						}}
 					>
 						{destination === accountType ? (
-							<Icon name="check-circle" mr={2} size={8} color="teal.500" />
+							<Icon name="check-circle" mr={2} size={8} color="black" />
 						) : (
 							<Circle className="mr-2 text-gray-500" size={32} />
 						)}
