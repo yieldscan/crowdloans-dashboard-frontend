@@ -9,7 +9,7 @@ const CompoundRewardSlider = ({
 		<div className="flex items-center">
 			<Switch
 				mb={-1}
-				color="teal"
+				color="black"
 				isChecked={checked}
 				onChange={(e) => {
 					setChecked(e.target.checked);
@@ -19,7 +19,7 @@ const CompoundRewardSlider = ({
 			<span
 				className={`
 					text-sm font-semibold ml-2
-					${checked ? 'text-teal-500' : 'text-gray-600'}
+					${checked ? "text-black" : "text-gray-600"}
 				`}
 			>
 				{checked ? "Yes" : "No"}

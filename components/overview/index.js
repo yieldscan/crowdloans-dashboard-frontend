@@ -61,7 +61,7 @@ const Overview = () => {
 					No account {isNil(accounts) ? "connected" : "selected"}!
 				</span>
 				<button
-					className="border border-teal-500 text-teal-500 px-3 py-2 rounded-full"
+					className="border border-black text-black px-3 py-2 rounded-full"
 					onClick={toggle}
 				>
 					{isNil(accounts) ? "Connect Wallet" : "Select Account"}
@@ -71,7 +71,7 @@ const Overview = () => {
 	) : loading ? (
 		<div className="flex-center w-full h-full">
 			<div className="flex-center flex-col">
-				<Spinner size="xl" color="teal.500" thickness="4px" />
+				<Spinner size="xl" color="black" thickness="4px" />
 				<span className="text-sm text-gray-600 mt-5">
 					{isNil(apiInstance)
 						? "Instantiating API..."

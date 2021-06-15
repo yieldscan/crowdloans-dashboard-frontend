@@ -198,7 +198,7 @@ const WalletConnectPopover = ({ styles, networkInfo, cookies }) => {
 					) : !accounts ? (
 						<div className="flex-center w-full h-full min-h-26-rem">
 							<div className="flex-center flex-col">
-								<Spinner size="xl" color="teal.500" thickness="4px" />
+								<Spinner size="xl" color="black" thickness="4px" />
 								<span className="text-sm text-gray-600 mt-5">
 									{extensionEvent}
 								</span>

@@ -69,7 +69,7 @@ const AmountInputDefault = ({
 					<span className="flex min-w-fit-content">
 						{inputValue !== maxAmount && (
 							<button
-								className="bg-teal-200 text-teal-500 rounded-full text-xs px-2"
+								className="bg-teal-200 text-black rounded-full text-xs px-2"
 								onClick={() => {
 									handleChange(maxAmount);
 								}}
@@ -126,7 +126,7 @@ const AmountInputAlreadyBonded = ({ value, bonded, total, onChange }) => (
 			</div>
 		</div>
 		<div className="bg-gray-800 mt-2 p-3 px-6 flex flex-col rounded-xl">
-			<span className="text-teal-500 text-sm">Total Staking Amount</span>
+			<span className="text-black text-sm">Total Staking Amount</span>
 			<h3 className="text-xl text-white">{total.currency} KSM</h3>
 			<span hidden className="text-gray-500 text-xs">
 				${total.subCurrency}

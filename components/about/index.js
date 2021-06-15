@@ -25,8 +25,7 @@ import {
 const members = [
 	{
 		avatar_url: "/images/team/saumya-karan.png",
-		bio:
-			"Truth seeker. Spending mindspace in solving UX problems in onboarding people to decentralized economic networks.",
+		bio: "Truth seeker. Spending mindspace in solving UX problems in onboarding people to decentralized economic networks.",
 		name: "Saumya Karan",
 		twitter_username: "saumya_karan",
 		blog: "https://saumyakaran.com/",
@@ -36,8 +35,7 @@ const members = [
 	},
 	{
 		avatar_url: "/images/team/sahil-nanda.png",
-		bio:
-			"Studying validator & nominator relationships across various PoS stakes.",
+		bio: "Studying validator & nominator relationships across various PoS stakes.",
 		name: "Sahil Nanda",
 		url: "https://github.com/sahilnanda1995",
 		linked_in: "sahil-nanda-8b1b88143",
@@ -45,8 +43,7 @@ const members = [
 	},
 	{
 		avatar_url: "/images/team/prastut-kumar.png",
-		bio:
-			"Insatiably curious. Currently a student of cryptoeconomics and reality.",
+		bio: "Insatiably curious. Currently a student of cryptoeconomics and reality.",
 		name: "Prastut Kumar",
 		twitter_username: "prastutkumar",
 		blog: "https://prastutkumar.com/",
@@ -83,14 +80,14 @@ const SocialLink = ({ icon, href }) => {
 			isExternal
 			color="gray.600"
 			_focus={{ boxShadow: "none" }}
-			_hover={{ color: "teal.500" }}
+			_hover={{ color: "black" }}
 		>
 			{/* <Icon
 				as={icon}
 				transition="all 0.2s"
-				_hover={{ color: "teal.600" }}
+				_hover={{ color: "black" }}
 				fontSize="xl"
-				color="teal.500"
+				color="black"
 			/> */}
 			{icon}
 		</Link>
@@ -196,7 +193,7 @@ const About = () => {
 				<Link
 					href="https://buidllabs.io/"
 					textDecor="underline"
-					color="teal.500"
+					color="black"
 					ml={1}
 					isExternal
 				>
@@ -243,14 +240,12 @@ const About = () => {
 					))}
 				</Flex>
 			</Stack>
-			<div className="w-screen bg-teal-500 py-8 flex justify-center items-center mt-32">
-				<p className="text-2xl text-white mr-8">
-					Looking to build the future?
-				</p>
+			<div className="w-screen bg-black py-8 flex justify-center items-center mt-32">
+				<p className="text-2xl text-white mr-8">Looking to build the future?</p>
 				<Link
 					href="https://buidllabs.io/careers/"
 					className="min-w-max-content"
-					color="teal.500"
+					color="black"
 					backgroundColor="white"
 					rounded="md"
 					fontWeight="normal"
@@ -291,7 +286,7 @@ const About = () => {
 						Program. See{" "}
 						<Link
 							href="https://medium.com/web3foundation/web3-foundation-grants-wave-6-recipients-5ed8d5cc179"
-							color="teal.500"
+							color="black"
 							isExternal
 						>
 							official announcement

@@ -13,7 +13,7 @@ const Settings = () => {
 				<div className="flex flex-col">
 					<button
 						onClick={() => window.Metomic.raise()}
-						className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-teal-500 hover:bg-gray-400 hover:bg-opacity-22"
+						className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-black hover:bg-gray-400 hover:bg-opacity-22"
 					>
 						Manage cookies <ChevronRight />
 					</button>
@@ -26,14 +26,14 @@ const Settings = () => {
 					<a
 						target="_blank"
 						href="https://discord.gg/5Dggqx8"
-						className="mr-12 flex text-sm items-center hover:text-teal-500"
+						className="mr-12 flex text-sm items-center hover:text-black"
 					>
 						<FaDiscord size="16px" className="mr-2" /> Discord
 					</a>
 					<a
 						target="_blank"
 						href="https://t.me/yieldscan"
-						className="mr-12 flex text-sm items-center hover:text-teal-500"
+						className="mr-12 flex text-sm items-center hover:text-black"
 					>
 						<FaTelegram size="16px" className="mr-2" /> Telegram
 					</a>
@@ -46,7 +46,7 @@ const Settings = () => {
 					<Link href="/privacy">
 						<a
 							target="_blank"
-							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-teal-500 hover:bg-gray-400 hover:bg-opacity-22"
+							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-black hover:bg-gray-400 hover:bg-opacity-22"
 						>
 							Privacy Policy <ChevronRight />
 						</a>
@@ -54,7 +54,7 @@ const Settings = () => {
 					<Link href="/terms">
 						<a
 							target="_blank"
-							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-teal-500 hover:bg-gray-400 hover:bg-opacity-22"
+							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-black hover:bg-gray-400 hover:bg-opacity-22"
 						>
 							Terms of service <ChevronRight />
 						</a>
@@ -62,7 +62,7 @@ const Settings = () => {
 					<Link href="/disclaimer">
 						<a
 							target="_blank"
-							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-teal-500 hover:bg-gray-400 hover:bg-opacity-22"
+							className="flex justify-between px-2 text-sm py-2 my-1 rounded-lg hover:text-black hover:bg-gray-400 hover:bg-opacity-22"
 						>
 							Disclaimer <ChevronRight />
 						</a>
