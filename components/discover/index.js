@@ -113,14 +113,14 @@ const Discover = () => {
 													alt=""
 												/>
 											</div>
-											<div className="min-w-0 flex-1 px-6 grid grid-cols-2 gap-64">
-												<div>
+											<div className="min-w-0 flex-1 px-6 grid-list">
+												<div className="">
 													<h2 className="text-lg font-bold">{cl.name}</h2>
 													<p className="flex items-center max-w-lg text-sm text-textGray-500">
 														<span className="truncate">{cl.desc}</span>
 													</p>
 												</div>
-												<div className="ml-40">
+												<div className="">
 													<div>
 														<p className="text-xs font-bold text-textGray-400">
 															STATUS
