@@ -1,6 +1,6 @@
 import { FaDiscord, FaTelegram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { Settings } from "react-feather";
+import { Settings, ArrowUpRight } from "react-feather";
 import { MenuOption } from "@components/common/sidemenu";
 import { useRouter } from "next/router";
 import Routes from "@lib/routes";
@@ -21,27 +21,13 @@ const SideMenuFooter = () => {
 				selected={router.pathname === Routes.SETTINGS}
 				href={Routes.SETTINGS}
 			/>
-			<div className="flex px-5 mt-8">
+			<div className="flex px-5 mt-4">
 				<a
-					target="_blank"
-					href="https://discord.gg/5Dggqx8"
-					className="mr-8 hover:text-black"
+					href="https://yieldscan.app"
+					className="flex item-center rounded-lg border border-gray-300 px-4 py-2 font-medium text-black bg-gray-400"
 				>
-					<FaDiscord size="24px" className="mr-2" />
-				</a>
-				<a
-					target="_blank"
-					href="https://t.me/yieldscan"
-					className="mr-8 hover:text-black"
-				>
-					<FaTelegram size="24px" className="mr-2" />
-				</a>
-				<a
-					href="mailto:karan@buidllabs.io"
-					target="_blank"
-					className="hover:text-black"
-				>
-					<IoIosMail size="24px" />
+					<ArrowUpRight className="inline mr-2 mt-px h-5 w-5" />
+					<span className="text-base hover:underline">Go to staking app</span>
 				</a>
 			</div>
 		</div>

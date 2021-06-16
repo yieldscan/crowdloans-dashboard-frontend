@@ -201,7 +201,7 @@ const withDashboardLayout = (children) => {
 		<div>
 			<Header />
 			<div className="dashboard-content fixed flex relative w-full">
-				<div className="h-full relative hidden xl:block sidemenu-container xl:w-2/12 py-8 max-w-xs">
+				<div className="h-full relative hidden xl:block sidemenu-container py-8 w-full max-w-xs">
 					<SideMenu />
 					<div className="absolute w-full bottom-0 pb-8">
 						<SideMenuFooter />
