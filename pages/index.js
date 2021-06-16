@@ -6,14 +6,14 @@ const Page = dynamic(
 	{ ssr: false }
 );
 
-const OverviewComponent = dynamic(
+const DashboardComponent = dynamic(
 	() => import("@components/overview").then((mod) => mod.default),
 	{ ssr: false }
 );
 
 const Payment = () => (
 	<Page title="Crowdloans" layoutProvider={withDashboardLayout}>
-		{() => <OverviewComponent />}
+		{() => <DashboardComponent />}
 	</Page>
 );
 

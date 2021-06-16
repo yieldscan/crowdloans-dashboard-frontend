@@ -6,14 +6,14 @@ const Page = dynamic(
 	{ ssr: false }
 );
 
-// const SettingsComponent = dynamic(
-// 	() => import("@components/settings").then((mod) => mod.default),
-// 	{ ssr: false }
-// );
+const DiscoverComponent = dynamic(
+	() => import("@components/discover").then((mod) => mod.default),
+	{ ssr: false }
+);
 
 const Settings = () => (
 	<Page title="Settings" layoutProvider={withDashboardLayout}>
-		{() => "soon"}
+		{() => <DiscoverComponent />}
 	</Page>
 );
 
