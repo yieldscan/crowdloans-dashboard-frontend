@@ -575,6 +575,7 @@ const Header = ({ isBase }) => {
 											) {
 												return (
 													<button
+														key={x.name}
 														className={`flex items-center px-4 py-2 text-white text-sm leading-5 ${
 															selectedNetwork === x.name
 																? "cursor-default bg-gray-600"
