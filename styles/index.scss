@@ -289,7 +289,7 @@ input[type="number"] {
 // For testimonial slider on homepage
 
 .sc-bdnylx {
-    align-items: stretch;
+	align-items: stretch;
 	display: inline-flex !important;
 	height: 100%;
 }
@@ -379,6 +379,11 @@ input[type="number"] {
 .loader.success,
 .loader.fail {
 	animation: pop 1.2s ease-in-out;
+}
+
+.grid-list {
+	display: grid;
+	grid-template-columns: 90% 100px;
 }
 
 @keyframes spin {
